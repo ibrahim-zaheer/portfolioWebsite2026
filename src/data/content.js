@@ -71,28 +71,41 @@ export const WEB_PROJECTS = [
     description: "A MERN stack marketplace platform featuring role-based access control (RBAC), real-time chat functionality, and cloud media handling via AWS S3 and Cloudinary. Proves full-stack capability: authentication/authorization architecture, real-time systems, and cloud integration.",
     role: "Full-Stack Developer",
     techStack: ["React", "Node.js", "Express", "MongoDB", "AWS S3", "Socket.io"],
-    // liveLink: "#",
     githubLink: "https://github.com/ibrahim-zaheer/sialconnectFinal",
     image: sialConnectLogo,
+  },
+  {
+    title: "FlowFix Plumbing",
+    description: "A high-converting, responsive landing page & booking platform built for emergency plumbing services. Features 24/7 dispatch indicators, service pricing cards, local business JSON-LD schema for local SEO optimization, and streamlined booking workflow.",
+    role: "Frontend Developer",
+    techStack: ["HTML5", "CSS3", "JavaScript", "Schema.org", "Netlify"],
+    liveLink: "https://flowfixed.netlify.app/",
+    image: null,
+  },
+  {
+    title: "Precision Auto Care",
+    description: "An interactive, conversion-focused automotive service platform for an ASE-certified repair center. Includes online scheduling tools, diagnostic breakdowns, 24-month warranty guarantees, and structured local SEO markup.",
+    role: "Frontend Developer",
+    techStack: ["HTML5", "CSS3", "JavaScript", "Local SEO", "Netlify"],
+    liveLink: "https://precisionautocares.netlify.app/",
+    image: null,
+  },
+  {
+    title: "IronCore Fitness",
+    description: "A modern, high-energy web application for a luxury gym & fitness club. Features interactive class schedules, membership tier comparisons, trainer showcases, and smooth responsive UI micro-interactions.",
+    role: "Frontend Developer",
+    techStack: ["HTML5", "CSS3", "JavaScript", "Google Fonts", "Netlify"],
+    liveLink: "https://ironcores.netlify.app/",
+    image: null,
   },
   {
     title: "Investify",
     description: "A Flutter-based mobile application (final year project). Serves as proof of cross-platform/mobile capability beyond the web stack.",
     role: "Mobile App Developer",
     techStack: ["Flutter", "Dart", "Firebase"],
-    // liveLink: "#",
     githubLink: "https://github.com/ibrahim-zaheer/InvestorApp",
     image: investifyLogo,
   },
-  // {
-  //   title: "[Project Name Placeholder]",
-  //   description: "Placeholder for Electrician/Plumber Hiring App or Workspace Management System.",
-  //   role: "Full-Stack Developer",
-  //   techStack: ["React", "Tailwind", "Node.js"],
-  //   liveLink: "#",
-  //   githubLink: "#",
-  //   image: null,
-  // }
 ];
 
 export const GAME_PROJECTS = [
@@ -111,7 +124,7 @@ export const GAME_PROJECTS = [
   {
     title: "Shelter",
     description: "A defense game in the spirit of Angry Birds, but inverted — instead of attacking, the player defends buildings and civilians from incoming rocket attacks.",
-    learned: "[Placeholder: physics mechanics, defense logic, trajectory calculation]",
+    learned: "Implementing 2D physics mechanics, defensive AI logic, and trajectory calculations for real-time projectile interception.",
     link: "https://play.google.com/store/apps/details?id=com.ibrahimzaheer.shelter"
   }
 ];

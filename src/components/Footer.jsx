@@ -9,7 +9,7 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} {HERO_DATA.name}. All rights reserved.
         </p>
         <div className="text-xs text-gray-600 font-heading">
-          Built with <span className="text-accent/70">React</span> + <span className="text-accent/70">Three.js</span>
+          {/* Built with <span className="text-accent/70">React</span> + <span className="text-accent/70">Three.js</span> */}
         </div>
       </div>
     </footer>
