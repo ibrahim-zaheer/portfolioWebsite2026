@@ -27,16 +27,19 @@ const Skills = () => {
         viewport={{ once: true, margin: "-100px" }}
       >
         <h2 className="text-3xl md:text-5xl font-bold mb-16 flex items-center">
-          <span className="text-accent mr-4">02.</span> Skills
+          <span className="text-accent mr-4">03.</span> What I Can Build You
           <div className="h-[1px] bg-gray-700 flex-grow ml-8"></div>
         </h2>
 
         <div className="flex flex-col gap-12">
           {SKILLS_DATA.map((category, idx) => (
             <div key={idx}>
-              <h3 className="text-2xl font-heading text-white mb-6 border-b border-gray-800 pb-2 inline-block">
+              <h3 className="text-2xl font-heading text-white mb-2 border-b border-gray-800 pb-2 inline-block">
                 {category.category}
               </h3>
+              <p className="text-gray-300 text-base md:text-lg mb-6 max-w-3xl leading-relaxed">
+                {category.description}
+              </p>
               <motion.div 
                 variants={containerVariants}
                 initial="hidden"

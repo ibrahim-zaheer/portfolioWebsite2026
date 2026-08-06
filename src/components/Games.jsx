@@ -13,7 +13,7 @@ const Games = () => {
         viewport={{ once: true, margin: "-100px" }}
       >
         <h2 className="text-3xl md:text-5xl font-bold mb-16 flex items-center">
-          <span className="text-accent mr-4">04.</span> Mobile Games
+          <span className="text-accent mr-4">05.</span> Apps I've Shipped
           <div className="h-[1px] bg-gray-700 flex-grow ml-8"></div>
         </h2>
 

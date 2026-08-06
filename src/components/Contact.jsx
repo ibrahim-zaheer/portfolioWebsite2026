@@ -49,13 +49,13 @@ const Contact = () => {
         transition={{ duration: 0.6 }}
         viewport={{ once: true, margin: "-100px" }}
       >
-        <span className="text-accent font-heading mb-4 block">05. What's Next?</span>
+        <span className="text-accent font-heading mb-4 block">06. What's Next?</span>
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
           {CONTACT_DATA.heading}
         </h2>
         
         <p className="text-gray-400 text-lg mb-12 max-w-2xl mx-auto">
-          Whether you have a question, want to discuss a freelance project, or have a full-time opportunity, my inbox is always open. I'll try my best to get back to you!
+          Have a problem that's costing you money or time? Tell me what it is. I'll tell you honestly whether software is the fix.
         </p>
 
         {/* Contact Form Container */}

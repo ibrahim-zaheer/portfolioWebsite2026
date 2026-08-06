@@ -13,7 +13,7 @@ const Projects = () => {
         viewport={{ once: true, margin: "-100px" }}
       >
         <h2 className="text-3xl md:text-5xl font-bold mb-16 flex items-center">
-          <span className="text-accent mr-4">03.</span> Web Projects
+          <span className="text-accent mr-4">04.</span> Web Projects
           <div className="h-[1px] bg-gray-700 flex-grow ml-8"></div>
         </h2>
 

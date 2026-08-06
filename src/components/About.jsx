@@ -35,7 +35,7 @@ const About = () => {
               <div className="z-10 text-center">
                 <h3 className="text-2xl font-heading text-white mb-2 text-glow">Software Engineer</h3>
                 <p className="text-accent">Finz Games</p>
-                <p className="text-sm text-gray-400 mt-1">Present</p>
+                <p className="text-sm text-gray-400 mt-1">Feb 2026 – Jun 2026</p>
               </div>
             </div>
           </div>

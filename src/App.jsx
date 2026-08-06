@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import Hero from './components/Hero';
 import About from './components/About';
+import WhyThisMatters from './components/WhyThisMatters';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Games from './components/Games';
@@ -17,6 +18,7 @@ function App() {
       
       <main>
         <About />
+        <WhyThisMatters />
         <Skills />
         <Projects />
         <Games />

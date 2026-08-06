@@ -100,7 +100,7 @@ const Hero = () => {
             View Projects
           </a>
           <a href="#contact" className="px-8 py-3 rounded bg-accent/10 border border-transparent text-white font-medium hover:bg-accent/20 transition-colors duration-300 glass-card">
-            Hire Me
+            Bring Me a Problem
           </a>
         </motion.div>
       </div>
