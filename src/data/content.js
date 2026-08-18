@@ -10,59 +10,57 @@ import investifyLogo from '../assets/investify logo.png';
 
 export const HERO_DATA = {
   name: "Ibrahim Zaheer",
-  subheadings: ["MERN Stack Developer", "Mobile App Developer", "DevOps Enthusiast"],
-  valueProp: "I Build Software That Makes You Money or Saves You Money. You bring the problem. I build the app or platform that pays for itself. Full-stack platforms, booking systems, and apps shipped and live on Google Play.",
+  subheadings: ["Offline-First Mobile Apps", "Logistics & Construction Software", "Field Data Sync Specialist"],
+  valueProp: "I build offline-first mobile apps for logistics and construction field teams — software that keeps field crews working reliably even with poor or zero connectivity, syncing data automatically once back online.",
 };
 
 export const ABOUT_DATA = {
-  bio: "I build software with one filter: does this make money, save money, or save enough time that it's the same thing. I specialize in the MERN stack, but the actual job doesn't change. Find the point where a business is losing money to a bad process or a missed customer, and build the smallest thing that fixes it.",
-  gameDev: "Three of my apps are live on Google Play, proof that I don't just prototype, I ship things that generate revenue through ads and monetization loops and get used by real people. I'm currently going deeper into AI integration because automating a task someone's paying a person to do by hand is one of the most direct ways software saves money.",
+  bio: "I specialize in mobile app development with a strict focus on offline-first architecture, local data retention, and seamless background synchronization. Field teams in logistics and construction frequently work in zero-coverage zones where web apps stall and data loss stalls job sites. I build resilient mobile systems engineered to ensure zero downtime, immediate user responsiveness, and dependable conflict resolution when reconnecting.",
+  gameDev: "My background includes building and shipping production mobile applications live on Google Play, giving me deep experience in local state storage, state machine reliability, and resource efficiency on mobile devices. My work is dedicated to solving connectivity and field workflow challenges for logistics, job tracking, and field service operations.",
 };
 
 export const SKILLS_DATA = [
   {
-    category: "Booking & Scheduling Systems",
-    description: "Stop losing customers to whoever makes it easiest to book. I build scheduling, appointment, and dispatch systems that turn a visit into a paid job.",
+    category: "Offline-First Mobile Apps",
+    description: "Mobile applications built with robust local SQLite/WatermelonDB storage and background task queues so field workers never lose progress when cell service drops.",
     skills: [
-      { name: "React", icon: FaReact },
+      { name: "React Native / Mobile", icon: FaReact },
       { name: "Node.js", icon: FaNodeJs },
-      { name: "MongoDB", icon: SiMongodb },
+      { name: "MongoDB / Local DB", icon: SiMongodb },
     ]
   },
   {
-    category: "Customer-Facing Platforms & Marketplaces",
-    description: "Trust and speed decide whether a deal closes. I build platforms with real-time chat, role-based access, and secure transactions so nothing gets lost to friction.",
+    category: "Dispatch & Job Tracking Systems",
+    description: "Real-time dispatch boards, job assignment workflows, and field audit trails built for seamless communication between dispatchers and remote site crews.",
     skills: [
       { name: "Express", icon: SiExpress },
-      { name: "REST APIs", icon: null },
-      { name: "AWS S3", icon: null },
+      { name: "REST & WebSockets", icon: null },
+      { name: "Cloud Storage (AWS S3)", icon: null },
     ]
   },
   {
-    category: "Mobile Apps, Published and Live",
-    description: "An idea isn't worth anything until it's in someone's hands. I build and ship cross-platform apps that are live on Google Play, not stuck in a prototype.",
+    category: "Data Sync & Conflict Resolution",
+    description: "Delta-based synchronization engines and conflict resolution strategies (CRDTs / last-write-wins) ensuring seamless sync when field devices reconnect.",
     skills: [
-      { name: "Unity", icon: FaUnity },
-      { name: "C#", icon: null },
+      { name: "TypeScript", icon: SiTypescript },
+      { name: "JavaScript", icon: SiJavascript },
     ]
   },
   {
-    category: "AI-Powered Tools",
-    description: "Every task a person does by hand that software could do instead is money leaking out slowly. I build AI-connected tools that automate that away.",
+    category: "Mobile Performance & Distribution",
+    description: "Native mobile build configurations, optimized local caching, and field deployment through production app stores and enterprise distribution.",
+    skills: [
+      { name: "Unity & C# Mobile", icon: FaUnity },
+      { name: "Android / Play Store", icon: null },
+    ]
+  },
+  {
+    category: "Field AI & Automated Tools",
+    description: "On-device or edge-connected AI tooling for document scanning, automated logs processing, and job report summarization in remote environments.",
     skills: [
       { name: "LangChain", icon: SiLangchain },
-      { name: "RAG Pipelines", icon: null },
+      { name: "RAG & Document Parsing", icon: null },
       { name: "LLM API Integration", icon: null },
-    ]
-  },
-  {
-    category: "Infrastructure That Doesn't Break",
-    description: "A product that goes down loses money the moment it's offline. I set up the hosting, networking, and server architecture so it doesn't.",
-    skills: [
-      { name: "Linux", icon: FaLinux },
-      { name: "Vagrant", icon: SiVagrant },
-      { name: "Networking (DNS, DNSMasq)", icon: null },
-      { name: "VM Architecture", icon: null },
     ]
   }
 ];
@@ -70,7 +68,7 @@ export const SKILLS_DATA = [
 export const WEB_PROJECTS = [
   {
     title: "Sial Connect",
-    description: "Export marketplaces lose deals to unreliable buyer/seller trust and slow negotiation. I built role-based access control, real-time chat, and cloud media handling so trades close faster and platform operators don't lose transactions to friction or fraud.",
+    description: "Export logistics platform built to handle complex multi-role workflows. Implemented role-based access, real-time messaging using Socket.io, and asynchronous media uploads engineered for multi-user coordination across varying network conditions.",
     role: "Full-Stack Developer",
     techStack: ["React", "Node.js", "Express", "MongoDB", "AWS S3", "Socket.io"],
     githubLink: "https://github.com/ibrahim-zaheer/sialconnectFinal",
@@ -78,7 +76,7 @@ export const WEB_PROJECTS = [
   },
   {
     title: "FlowFix Plumbing",
-    description: "An emergency plumbing customer who can't book in under a minute calls the next name on Google. That's a lost job, not a lost visitor. I built a high-converting landing page with 24/7 dispatch indicators and upfront pricing to capture that booking before it goes anywhere else.",
+    description: "Field service landing platform optimized for emergency dispatch and rapid mobile job intake. Features dynamic dispatch indicators and instant contact forms designed for mobile field users.",
     role: "Frontend Developer",
     techStack: ["HTML5", "CSS3", "JavaScript", "Schema.org", "Netlify"],
     liveLink: "https://flowfixed.netlify.app/",
@@ -86,25 +84,25 @@ export const WEB_PROJECTS = [
   },
   {
     title: "Precision Auto Care",
-    description: "Every missed booking is a missed repair job, real revenue lost to whichever shop makes scheduling easiest. I built online scheduling and transparent diagnostics so the site turns searches into paid appointments instead of losing them to a competitor's site.",
+    description: "Service scheduling application built with local storage persistence to retain user appointment drafts and customer inputs across browser reloads and connection drops.",
     role: "Frontend Developer",
-    techStack: ["HTML5", "CSS3", "JavaScript", "Local SEO", "Netlify"],
+    techStack: ["HTML5", "CSS3", "JavaScript", "Local Storage", "Netlify"],
     liveLink: "https://precisionautocares.netlify.app/",
     image: null,
   },
   {
     title: "IronCore Fitness",
-    description: "A membership is recurring revenue. Every visitor who leaves without signing up is lost monthly income, not just a bounce. I built class schedules, membership comparisons, and trainer showcases designed to convert browsing into paid sign-ups.",
+    description: "Member management and class scheduling interface built with offline state fallbacks to display schedules and workout plans without requiring active network requests on every navigation.",
     role: "Frontend Developer",
-    techStack: ["HTML5", "CSS3", "JavaScript", "Google Fonts", "Netlify"],
+    techStack: ["HTML5", "CSS3", "JavaScript", "Netlify"],
     liveLink: "https://ironcores.netlify.app/",
     image: null,
   },
   {
     title: "Investify",
-    description: "Built to prove I can solve problems outside the web stack. A Flutter mobile app demonstrating the same money-focused, problem-first approach on a cross-platform target.",
+    description: "Cross-platform Flutter mobile application demonstrating mobile-first data handling, local cache state management, and real-time backend synchronization with Firebase.",
     role: "Mobile App Developer",
-    techStack: ["Flutter", "Dart", "Firebase"],
+    techStack: ["Flutter", "Dart", "Firebase", "Offline Cache"],
     githubLink: "https://github.com/ibrahim-zaheer/InvestorApp",
     image: investifyLogo,
   },
@@ -113,27 +111,27 @@ export const WEB_PROJECTS = [
 export const GAME_PROJECTS = [
   {
     title: "Farm Cycle",
-    description: "A farming loop that isn't addictive enough loses players before monetization ever kicks in. I built a complete plant-growth state system engineered to keep players in-loop long enough for ad revenue to actually convert. Shipped and live on Google Play.",
-    learned: "Designing and implementing a complete plant-growth state system.",
+    description: "Mobile app with complete offline local state preservation. Engine handles offline simulation time calculations and state reconciliation upon app restart without requiring server connections. Live on Google Play.",
+    learned: "Implementing reliable local state machines, offline persistence, and memory-efficient lifecycle management.",
     link: "https://play.google.com/store/apps/details?id=com.ibrahim.farmcycle"
   },
   {
     title: "Astro Blitz",
-    description: "Instant death screens push players out before they see an ad. I solved that with non-standard scoring and timed spawn logic that keeps players playing longer, directly increasing ad monetization. Shipped and live.",
-    learned: "Designing non-standard game-over/scoring logic and timed spawn systems, plus integrating ad monetization.",
+    description: "High-performance mobile application featuring offline-first local high score caching and asynchronous retry logic for cloud leaderboard sync when connectivity resumes. Live on Google Play.",
+    learned: "Managing local storage queues, network status listeners, and deferred cloud sync operations.",
     link: "https://play.google.com/store/apps/details?id=com.ibrahimzaheer.astroblitz"
   },
   {
     title: "Shelter",
-    description: "A defense game with weak physics or AI loses players in the first few minutes, before any monetization has a chance. I built the real-time projectile interception and defensive AI that keeps the core loop compelling enough to retain players. Shipped and live on Google Play.",
-    learned: "Implementing 2D physics mechanics, defensive AI logic, and trajectory calculations for real-time projectile interception.",
+    description: "Mobile real-time application optimized for low-latency touch response and offline execution, featuring local save file serialization and zero reliance on external network availability during gameplay. Live on Google Play.",
+    learned: "Designing resilient local storage serialization, low-latency UI responsiveness, and offline state handling.",
     link: "https://play.google.com/store/apps/details?id=com.ibrahimzaheer.shelter"
   }
 ];
 
 export const CONTACT_DATA = {
-  heading: "Let's Build Something",
-  email: "zaheeribrahim346@gmail.com", // Replace with real email
+  heading: "Let's Build Your Field App",
+  email: "zaheeribrahim346@gmail.com",
   github: "https://github.com/ibrahim-zaheer",
   linkedin: "https://www.linkedin.com/in/ibrahim-zaheer-88155421a/",
 };

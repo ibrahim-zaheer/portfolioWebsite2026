@@ -1,37 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { Points, PointMaterial } from '@react-three/drei';
-import * as random from 'maath/random/dist/maath-random.esm';
+'use client';
+
+import React, { useState, useEffect } from 'react';
+import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
 import { HERO_DATA } from '../data/content';
 
-function ParticleField(props) {
-  const ref = useRef();
-  // Generate random points in a sphere
-  const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.5 }));
-
-  useFrame((state, delta) => {
-    // Slowly rotate the particle field
-    if (ref.current) {
-      ref.current.rotation.x -= delta / 10;
-      ref.current.rotation.y -= delta / 15;
-    }
-  });
-
-  return (
-    <group rotation={[0, 0, Math.PI / 4]}>
-      <Points ref={ref} positions={sphere} stride={3} frustumCulled={false} {...props}>
-        <PointMaterial
-          transparent
-          color="#00f0ff"
-          size={0.005}
-          sizeAttenuation={true}
-          depthWrite={false}
-        />
-      </Points>
-    </group>
-  );
-}
+const HeroCanvas = dynamic(() => import('./HeroCanvas'), { ssr: false });
 
 const Hero = () => {
   const [subheadingIndex, setSubheadingIndex] = useState(0);
@@ -48,9 +22,7 @@ const Hero = () => {
     <section className="relative w-full h-screen mx-auto flex items-center justify-center overflow-hidden bg-background">
       {/* 3D Background */}
       <div className="absolute inset-0 z-0">
-        <Canvas camera={{ position: [0, 0, 1] }}>
-          <ParticleField />
-        </Canvas>
+        <HeroCanvas />
       </div>
 
       {/* Foreground Content */}
@@ -100,7 +72,7 @@ const Hero = () => {
             View Projects
           </a>
           <a href="#contact" className="px-8 py-3 rounded bg-accent/10 border border-transparent text-white font-medium hover:bg-accent/20 transition-colors duration-300 glass-card">
-            Bring Me a Problem
+            Discuss Your Field App
           </a>
         </motion.div>
       </div>

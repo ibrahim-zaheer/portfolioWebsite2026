@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
@@ -14,8 +16,8 @@ const Contact = () => {
     
     const formData = new FormData(event.target);
 
-    // Retrieve the access key from the environment variable
-    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "YOUR_ACCESS_KEY_HERE";
+    // Retrieve the access key from environment variable
+    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "YOUR_ACCESS_KEY_HERE";
     formData.append("access_key", accessKey);
 
     try {
@@ -55,7 +57,7 @@ const Contact = () => {
         </h2>
         
         <p className="text-gray-400 text-lg mb-12 max-w-2xl mx-auto">
-          Have a problem that's costing you money or time? Tell me what it is. I'll tell you honestly whether software is the fix.
+          Need a mobile app for your logistics or construction crews that operates smoothly offline and syncs reliably? Let's discuss your field workflow.
         </p>
 
         {/* Contact Form Container */}

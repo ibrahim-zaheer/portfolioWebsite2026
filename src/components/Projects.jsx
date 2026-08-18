@@ -1,4 +1,7 @@
+'use client';
+
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { WEB_PROJECTS } from '../data/content';
@@ -34,7 +37,7 @@ const Projects = () => {
                       <FaExternalLinkAlt className="text-accent text-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300" />
                     </div>
                     {project.image ? (
-                      <img src={project.image} alt={`${project.title} logo`} className="w-full h-full object-contain p-8 group-hover:scale-105 transition-transform duration-500" />
+                      <Image src={project.image} alt={`${project.title} logo`} className="w-full h-full object-contain p-8 group-hover:scale-105 transition-transform duration-500" />
                     ) : (
                       <div className="text-center p-6 flex flex-col items-center justify-center">
                         <span className="font-heading text-3xl md:text-4xl text-white/80 font-bold group-hover:text-accent transition-colors duration-300 tracking-tight">{project.title}</span>

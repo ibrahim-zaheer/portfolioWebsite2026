@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -11,13 +13,13 @@ const WhyThisMatters = () => {
         viewport={{ once: true, margin: "-100px" }}
       >
         <h2 className="text-3xl md:text-5xl font-bold mb-10 flex items-center">
-          <span className="text-accent mr-4">02.</span> The Filter I Build Everything Through
+          <span className="text-accent mr-4">02.</span> The Core Principle
           <div className="h-[1px] bg-gray-700 flex-grow ml-8"></div>
         </h2>
         
         <div className="glass-card p-8 md:p-10 rounded-xl relative overflow-hidden">
           <p className="text-gray-300 text-lg md:text-xl leading-relaxed font-normal">
-            A website, app, or feature only earns its place if it does one of two things: brings in money that wasn't coming in before, or removes a cost, in dollars or time, that shouldn't exist. If it doesn't do either, it's not worth building, no matter how impressive the tech behind it is.
+            Field software should never fail just because a cellular signal drops. If an app locks up, drops data, or requires field crews to re-enter job logs when working offline, it costs field operations real hours and revenue. Every mobile field application I build is engineered offline-first from day one.
           </p>
         </div>
       </motion.div>
